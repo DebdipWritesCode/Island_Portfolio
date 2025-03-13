@@ -3,6 +3,7 @@ import { Sky, useGLTF, Float, ScrollControls, Text } from "@react-three/drei"
 import "./App.css"
 import Ocean from "./components/Outdoor/Ocean"
 import CameraScroll from "./components/Outdoor/CameraScroll"
+import Scene from "./components/Outdoor/Scene"
 
 const App = () => {
   const { nodes } = useGLTF("./Model/House.glb")
@@ -25,7 +26,7 @@ const App = () => {
         </Text>
       </Float>
 
-      
+      <Scene nodes={nodes} />
 
       <ScrollControls pages={25} damping={0.2}>
         <CameraScroll nodes={nodes} />
