@@ -6,6 +6,8 @@ import LivingRoom from "../House/LivingRoom"
 import Lunchroom from "../House/Lunchroom"
 import Mug from "../House/Mug"
 import Roof from "../House/Roof"
+import ShaderSmoke from "../House/ShaderSmoke"
+import ShaderTab from "../House/ShaderTab"
 import Soap from "../House/Soap"
 import VinylsCovers from "../House/Vinylcovers"
 import Walls from "../House/Walls"
@@ -26,6 +28,8 @@ const House = (props) => {
       <VinylsCovers nodes={props.nodes} />
       <Mug nodes={props.nodes} />
       <Soap nodes={props.nodes} />
+      <ShaderTab />
+      <ShaderSmoke />
     </>
   )
 }
