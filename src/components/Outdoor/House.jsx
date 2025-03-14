@@ -4,7 +4,10 @@ import Floor from "../House/Floor"
 import Kitchen from "../House/Kitchen"
 import LivingRoom from "../House/LivingRoom"
 import Lunchroom from "../House/Lunchroom"
+import Mug from "../House/Mug"
 import Roof from "../House/Roof"
+import Soap from "../House/Soap"
+import VinylsCovers from "../House/Vinylcovers"
 import Walls from "../House/Walls"
 import Windows from "../House/Windows"
 
@@ -20,6 +23,9 @@ const House = (props) => {
       <Bathroom nodes={props.nodes} />
       <Floor nodes={props.nodes} />
       <Windows nodes={props.nodes} />
+      <VinylsCovers nodes={props.nodes} />
+      <Mug nodes={props.nodes} />
+      <Soap nodes={props.nodes} />
     </>
   )
 }
